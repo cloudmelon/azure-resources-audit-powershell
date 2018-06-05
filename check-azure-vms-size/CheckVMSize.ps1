@@ -13,11 +13,10 @@ Write-Output ("There are "+ + (Get-AzureRmVM).length + " Virtual machines in cur
 #Get all resource groups in current subscription 
 $rgs = Get-AzureRmResourceGroup
 
-#Current subscription :
-
-
+#Current subscription count :
 Write-Output ("Here are the details in subscription "+ $subscription + " each resource type in resource group : " )
-#Get all resources in resource group OK
+
+#Get all resources in resource group then list by VM size
 $rgs = Get-AzureRmResourceGroup
 
    Write-Output "VmName,VmInResourceGroup,VmSize,NumberOfCores,MemoryInMB,MaxDataDiskCount,OSDiskSizeInMB,ResourceDiskSizeInMB"
