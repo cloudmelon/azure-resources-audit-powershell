@@ -3,23 +3,24 @@
 ################################################### Login ###################################################
 Login-AzureRmAccount
 
+### Select Subscription ####
 $subscription = "Visual Studio Enterprise"
 Set-AzureRmContext -Subscription $subscription
 
 
-################################################### Clean prep work : Overview start ###################################################
+###################################################  Audit start ###################################################
 
 
-#Get all resources 
+#Get all resources in current subscription
 $resources = Get-AzureRmResource 
 
 #Get all resource groups in current subscription 
 $rgs = Get-AzureRmResourceGroup
 
-
+# Sort all the resource in current subscription by resource type
 $ResourceTypes = $resources.ResourceType | Sort-Object -Unique 
 
-#Current subscription :
+# Get Resource count for each resource type in Azure
  foreach ($ResType in $ResourceTypes) { 
     $ResCount = ($resources | Where-Object {$_.ResourceType -eq $ResType -and $_.ResourceGroupName -eq $rg.ResourceGroupName}).count 
     if ($ResCount -eq $null) { 
@@ -29,7 +30,8 @@ $ResourceTypes = $resources.ResourceType | Sort-Object -Unique
 } 
 
 Write-Output ("Here are the details in subscription "+ $subscription + " each resource type in resource group : " )
-#Get all resources in resource group OK
+
+# Get Resource count for each resource type order by resource group 
 Foreach( $rg in $rgs){
    Write-Host " "
    Write-Host $rg.ResourceGroupName  
@@ -46,6 +48,6 @@ Foreach( $rg in $rgs){
    Write-Host " "
 }
 
-###################################################  Clean prep work : Overview end ###################################################
+
 
 
