@@ -16,7 +16,7 @@ $rgs = Get-AzureRmResourceGroup
 #Current subscription count :
 Write-Output ("Here are the details in subscription "+ $subscription + " each resource type in resource group : " )
 
-#Get all resources in resource group then list by VM size
+#Get all resources in resource group then list by VM size as well as the VM specs
 $rgs = Get-AzureRmResourceGroup
 
    Write-Output "VmName,VmInResourceGroup,VmSize,NumberOfCores,MemoryInMB,MaxDataDiskCount,OSDiskSizeInMB,ResourceDiskSizeInMB"

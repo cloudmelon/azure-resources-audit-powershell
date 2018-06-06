@@ -1,4 +1,5 @@
 ﻿
+## Retrieve Azure Virtual Machine Size information in current subscription with PowerShell
 
 ################################################### Login ###################################################
 Login-AzureRmAccount
