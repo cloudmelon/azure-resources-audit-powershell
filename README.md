@@ -9,6 +9,20 @@ This repository stores Sample PowerShell Script which allows to audit Azure Reso
 - CheckAzureVMSize : Retrieve Azure Virtual Machine Size information in current subscription with PowerShell
 
 
+## Guide book
+
+Implementing Microsoft Azure Infrastructure Solutions : Exam Guide 70-533
+Author : Melony QIN
+
+
+More details on :
+https://www.packtpub.com/virtualization-and-cloud/implementing-microsoft-azure-infrastructure-solutions-exam-guide-70-533
+
+## Guide blog site 
+Blog site : https://www.cloud-melon.com/
+
+Share your insights with @MelonyQ at https://twitter.com/MelonyQ
+
 # Reference repository : 
 
 ARM Template : 
@@ -20,5 +34,3 @@ Azure PowerShell :
 Lab repository : https://github.com/cloudmelon/cloudmelonsamplecloudlab
 
 Application repository : https://github.com/cloudmelon/cloudmelonsampleapp
-
-Blog site : https://www.cloud-melon.com/
