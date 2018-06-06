@@ -1,7 +1,12 @@
 # Azure Resources Audit PowerShell Script Repository
 
-This repository stores Sample PowerShell Script which allows to audit Azure Resource in current Azure Subscription. 
+This repository stores Sample PowerShell Script which allows to audit Azure Resources in current Azure Subscription. 
 
+
+## Script Index 
+
+- CheckAzureResourceCount : Retrieve Azure each resource counts in current subscription with PowerShell
+- CheckAzureVMSize : Retrieve Azure Virtual Machine Size information in current subscription with PowerShell
 
 
 # Reference repository : 
