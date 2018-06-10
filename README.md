@@ -7,6 +7,7 @@ This repository stores Sample PowerShell Script which allows to audit Azure Reso
 
 - CheckAzureResourceCount : Retrieve Azure each resource counts in current subscription with PowerShell
 - CheckAzureVMSize : Retrieve Azure Virtual Machine Size information in current subscription with PowerShell
+- CheckAzureVmsCountsBySize: Counter all the VMs in your subscriptions in current account and group them by VM size
 
 
 ## Guide book
